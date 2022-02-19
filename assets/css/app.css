@@ -277,6 +277,9 @@ hr {
   .nav-menu a {
     font-size: 1.875rem;
   }
+  .nav-item:hover::before {
+    width: 0%;
+  }
 
   #nav-mobile {
     display: block;
