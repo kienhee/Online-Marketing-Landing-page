@@ -36,7 +36,10 @@
   display: none;
   font-size: 1.875rem;
 }
-
+.show-mobile{
+  
+    transform: translateX(0%) !important;
+}
 @media only screen and(max-width: 46.188rem) {
   .nav-menu {
     position: fixed;
@@ -48,8 +51,11 @@
     display: block;
     text-align: center;
     transform: translateX(100%);
-    & a:first {
-      margin-top: 100px;
+    & li{
+      margin-top: 20px;
+    }
+    & a {
+      font-size: 1.875rem;
     }
   }
   #nav-mobile {
@@ -69,8 +75,4 @@
       transition: 0.2s linear 0.2;
     }
   }
-  .show-mobile{
-  
-    transform: translateX(0%) !important;
-}
 } //739px

@@ -255,6 +255,10 @@ hr {
   font-size: 1.875rem;
 }
 
+.show-mobile {
+  transform: translateX(0%) !important;
+}
+
 @media only screen and (max-width: 46.188rem) {
   .nav-menu {
     position: fixed;
@@ -267,8 +271,11 @@ hr {
     text-align: center;
     transform: translateX(100%);
   }
-  .nav-menu a:first {
-    margin-top: 100px;
+  .nav-menu li {
+    margin-top: 20px;
+  }
+  .nav-menu a {
+    font-size: 1.875rem;
   }
 
   #nav-mobile {
@@ -286,10 +293,6 @@ hr {
     color: #000;
     font-size: inherit;
     transition: 0.2s linear 0.2;
-  }
-
-  .show-mobile {
-    transform: translateX(0%) !important;
   }
 }
 .hero {
