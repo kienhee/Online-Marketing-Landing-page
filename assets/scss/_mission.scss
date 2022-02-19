@@ -1,0 +1,40 @@
+.mission {
+  background-color: $color-light-gray;
+  height: 640px;
+  padding: 30px 0;
+  margin-bottom: 150px;
+  &-container {
+    @include flex-center;
+  }
+  &-content {
+    width: 40%;
+  }
+  &-img {
+    width: 60%;
+    & img {
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+}
+@media only screen and(max-width: 46.188rem) {
+  .mission {
+      display: none;
+    background-color: $color-light-gray;
+    height: auto;
+    &-container {
+      @include flex-center;
+      flex-direction: column;
+    }
+    &-content {
+      width: 100%;
+    }
+    &-img {
+      width: 100%;
+      & img {
+        width: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+} //739px

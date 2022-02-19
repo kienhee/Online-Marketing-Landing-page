@@ -1,0 +1,29 @@
+.feature {
+    padding-bottom: 150px;
+  @include flex-center;
+  gap: 50px;
+  &-img {
+      width: 50%;
+    & img {
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+  &-content {
+      width: 50%;
+  }
+  &-description{
+      padding-bottom: 40px;
+  }
+}
+@media only screen and(max-width: 46.188rem){
+  .feature {
+  flex-direction: column-reverse;
+  &-img {
+      width: 100%;
+  }
+  &-content {
+      width: 100%;
+  }
+}
+}//739px

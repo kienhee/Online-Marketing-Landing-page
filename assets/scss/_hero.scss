@@ -1,0 +1,45 @@
+.hero {
+  padding-bottom: 150px;
+  &-container {
+    @include flex-align-items-center;
+    gap: 40px 40px;
+  }
+  &-content {
+    width: 40%;
+  }
+  &-img {
+    width: 60%;
+    & img {
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+  &-award {
+    margin-bottom: 18px;
+  }
+  &-title {
+    color: $text-blue;
+    font-size: 3.125rem; //50
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+  &-description {
+    margin-bottom: 50px;
+  }
+  &-link {
+    margin-top: auto;
+  }
+}
+@media only screen and(max-width: 46.188rem) {
+  .hero {
+    &-container {
+      flex-direction: column;
+    }
+    &-content {
+      width: 100%;
+    }
+    &-img {
+      width: 100%;
+    }
+  }
+} //739px
