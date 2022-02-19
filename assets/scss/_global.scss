@@ -1,5 +1,6 @@
 
 .header {
+  z-index: 111;
   position: fixed;
   inset: 0;
   height: 80px;
@@ -10,9 +11,9 @@
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 .main-title {
   font-weight: 700;
@@ -50,4 +51,8 @@
   font-size: 1.563rem;
   font-weight: 600;
   color: $text-orange;
+}
+.icon-slider{
+  font-size:25px;
+  color: $text-blue;
 }

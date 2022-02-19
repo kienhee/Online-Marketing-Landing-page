@@ -152,10 +152,15 @@ button {
 }
 
 hr {
-  border: 1px solid #11317C;
+  border: 1px solid #11317c;
+}
+
+button {
+  background-color: transparent;
 }
 
 .header {
+  z-index: 111;
   position: fixed;
   inset: 0;
   height: 80px;
@@ -167,9 +172,9 @@ hr {
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .main-title {
@@ -214,6 +219,11 @@ hr {
   font-size: 1.563rem;
   font-weight: 600;
   color: #FF7D00;
+}
+
+.icon-slider {
+  font-size: 25px;
+  color: #051441;
 }
 
 .nav {
@@ -343,6 +353,22 @@ hr {
     width: 100%;
   }
 }
+@media only screen and (min-width: 46.25rem) and (max-width: 63.938rem) {
+  .hero {
+    padding-top: 50px;
+  }
+  .hero-container {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  .hero-content {
+    width: 50%;
+  }
+  .hero-img {
+    width: 50%;
+  }
+}
 .cooperate {
   height: 200px;
   margin-bottom: 150px;
@@ -366,17 +392,23 @@ hr {
 
 @media only screen and (max-width: 46.188rem) {
   .cooperate {
-    height: auto;
-    padding: 50px 0;
+    height: 100vh;
+    padding: 30px 0;
   }
   .cooperate-container {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
   }
   .cooperate-item {
     width: 50%;
     height: auto;
+  }
+}
+@media only screen and (min-width: 46.25rem) and (max-width: 63.938rem) {
+  .cooperate-container {
+    gap: 35px;
   }
 }
 .service {
@@ -386,10 +418,9 @@ hr {
   margin-bottom: 73px;
 }
 .service-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
 }
 .service-icon {
   margin-bottom: 25px;
@@ -407,31 +438,28 @@ hr {
   background: #ffffff;
   border: 2px solid #edeff7;
   border-radius: 13px;
-  width: 334px;
-  height: 334px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 40px 45px;
+  padding: 80px 45px;
 }
 .service-item:hover {
   box-shadow: 0px 24px 60px rgba(94, 122, 148, 0.1);
 }
 
 @media only screen and (max-width: 46.188rem) {
-  .service {
-    display: none;
-  }
   .service-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 30px;
   }
+}
+@media only screen and (min-width: 46.25rem) and (max-width: 63.938rem) {
   .service-item {
-    width: 100%;
-    height: auto;
+    padding: 50px 15px;
   }
 }
 .feature {
@@ -466,6 +494,68 @@ hr {
     width: 100%;
   }
 }
+.blog {
+  margin-bottom: 140px;
+}
+.blog-container {
+  padding: 20px 0;
+  display: flex;
+}
+.blog-item {
+  width: 355px;
+  height: 480px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 30px;
+}
+.blog .blog-item:hover {
+  box-shadow: 0px 46px 100px -31px rgba(0, 0, 0, 0.1);
+}
+.blog-img {
+  display: block;
+  height: 60%;
+}
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-content {
+  height: 40%;
+  padding: 30px 15px;
+}
+.blog-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #051441;
+  margin-bottom: 10px;
+}
+.blog-description {
+  font-size: 0.813rem;
+  font-weight: 400;
+  color: #635F85;
+}
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
 .mission {
   background-color: #F4F7FD;
   height: 640px;
@@ -631,6 +721,11 @@ hr {
     color: #635F85;
     font-weight: 500;
     font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 46.25rem) and (max-width: 63.938rem) {
+  .newsletter {
+    padding: 85px 25px;
   }
 }
 .footer {

@@ -43,3 +43,19 @@
     }
   }
 } //739px
+@media only screen and(min-width:46.25rem ) and(max-width: 63.938rem) {
+  .hero {
+    padding-top: 50px;
+    // height: 100vh;
+    &-container {
+      @include flex-align-items-center;
+      gap: 0;
+    }
+    &-content {
+      width: 50%;
+    }
+    &-img {
+      width: 50%;
+    }
+  }
+}

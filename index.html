@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Marketing Landing page</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -31,11 +32,11 @@
                     <a href="#" class="btn btn-outline">Login</a>
                     <a href="#" class="btn btn-primary">Sign Up</a>
                 </div> -->
-                <i class="fa-solid fa-bars"  id="nav-mobile"></i>
+                <i class="fa-solid fa-bars" id="nav-mobile"></i>
             </nav>
         </header>
         <main class="main">
-            <div class="hero">
+            <section class="hero">
                 <div class="hero-container container">
                     <div class="hero-content">
                         <p class="hero-award text-small">
@@ -55,8 +56,8 @@
                         <img srcset="./assets/images/hero.png 2x" alt="Hero images">
                     </div>
                 </div>
-            </div>
-            <div class="cooperate" id="whyus">
+            </section>
+            <section class="cooperate" id="whyus">
                 <div class="cooperate-container container">
 
                     <div class="cooperate-item">
@@ -75,8 +76,8 @@
                         <img src="./assets/images/cooperate5.png" alt="Heroku">
                     </div>
                 </div>
-            </div>
-            <div class="service text-align-center">
+            </section>
+            <section id="Features" class="service text-align-center">
                 <span class="text-small">what we do</span>
                 <h1 class="main-title">Grow Your Business <br> With Ringo</h1>
                 <p class="main-text service-text">tempus, lectus risus In' perdiel tellus, sed faucibus ipsum ipsurn nun
@@ -116,8 +117,8 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="feature container" id="Features">
+            </section>
+            <section class="feature container" id="Pricing">
                 <div class="feature-img">
                     <img src="./assets/images/feature.png" alt="WHO WE ARE">
                 </div>
@@ -132,8 +133,8 @@
                         <a href="/" class="btn btn-primary">Get In Touch</a>
                     </div>
                 </div>
-            </div>
-            <div class="mission" id="Pricing">
+            </section>
+            <section class="mission" id="Pricing">
                 <div class="mission-container container">
                     <div class="mission-content">
                         <span class="text-small">OUR MISSION & GOAL</span>
@@ -150,8 +151,8 @@
                         <img src="./assets/images/mission.png" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="testmonial container    ">
+            </section>
+            <section class="testmonial container    ">
                 <div class="testmonial-img">
                     <img src="./assets/images/testmonial.png" alt="">
                 </div>
@@ -175,16 +176,84 @@
                         <a href="/" class="btn btn-primary">Get In Touch</a>
                     </div>
                 </div>
-            </div>
-            <div class="blog text-align-center">
-                <h1 class="main-title">Our Regular Updated <br />Blog Posts</h1>
-                <p class="main-text service-text">tempus, lectus risus In' perdiel tellus, sed faucibus ipsum ipsurn nun
-                    neque.</p>
-                <div class="blog-container container">
+            </section>
+            <div class="blog ">
+                <div class="text-align-center">
 
+                    <h1 class="main-title">Our Regular Updated <br />Blog Posts</h1>
+                    <p class="main-text service-text">tempus, lectus risus In' perdiel tellus, sed faucibus ipsum ipsurn
+                        nun
+                        neque.</p>
+                </div>
+                <div class="blog-container container">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hcmtldGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">SEO tips and tricks for new</h3>
+                            <p class="blog-description">Curapitur eleifenc erat id ullarncorper porta,
+                                eras turpis tun pus just!), a porititar ju-to ode
+                                id oros. Proin lloborti*
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">A Guide to Google SEO</h3>
+                            <p class="blog-description">Curapitur eleifenc erat id ullarncorper porta,
+                                eras turpis tun pus just!), a porititar ju-to ode
+                                id oros. Proin lloborti*
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1474403078171-7f199e9d1335?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                                alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">SEO tips and tricks for new</h3>
+                            <p class="blog-description">Curapitur eleifenc erat id ullarncorper porta,
+                                eras turpis tun pus just!), a porititar ju-to ode
+                                id oros. Proin lloborti*
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWFya2V0aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">SEO tips and tricks for new</h3>
+                            <p class="blog-description">Curapitur eleifenc erat id ullarncorper porta,
+                                eras turpis tun pus just!), a porititar ju-to ode
+                                id oros. Proin lloborti*
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1562577308-9e66f0c65ce5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hcmtldGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">SEO tips and tricks for new</h3>
+                            <p class="blog-description">Curapitur eleifenc erat id ullarncorper porta,
+                                eras turpis tun pus just!), a porititar ju-to ode
+                                id oros. Proin lloborti*
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="newsletter container" id="contact">
+            <section class="newsletter container" id="contact">
                 <div class="newsletter-content">
                     <h1 class="main-title">Sign up to Our Newsletter</h1>
                     <p class="main-text">You need to get positive results when you
@@ -194,7 +263,7 @@
                     <input type="email" placeholder="Email...">&nbsp;
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                 </div>
-            </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="footer-container container">
@@ -283,6 +352,9 @@
             </p>
         </footer>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
