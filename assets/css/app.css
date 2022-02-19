@@ -736,6 +736,7 @@ button {
 .footer-container {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 10px;
   margin-bottom: 50px;
 }
 .footer-item ul > li {

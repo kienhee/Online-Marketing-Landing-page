@@ -4,7 +4,7 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-circle-chevron-left icon-slider' aria-hidden='true'></i></button>",
         nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa-solid fa-circle-chevron-right icon-slider' aria-hidden='true'></i></button>",
