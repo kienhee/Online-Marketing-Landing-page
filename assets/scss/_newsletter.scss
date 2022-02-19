@@ -25,40 +25,39 @@
     }
   }
 }
-@media only screen and(max-width: 46.188rem){
+@media only screen and(max-width: 46.188rem) {
   .newsletter {
-
-  padding: 10px;
-  margin-bottom: 140px;
-  background-color: $color-light-gray;
-  border-radius: 0px;
-  @include flex-center;
-  flex-direction: column;
-  gap: 20px;
-  &-content {
-    width: 100%;
-  }
-  &-input {
-    @include flex;
+    padding: 50px 15px;
+    margin-bottom: 140px;
+    background-color: $color-light-gray;
+    border-radius: 0px;
+    @include flex-center;
     flex-direction: column;
-    & input[type="email"] {
-      display: block;
-      padding: 15px 20px;
-      outline: none;
-      border-radius: 26.5px;
-      border: none;
+    gap: 20px;
+    &-content {
+      width: 100%;
     }
-    & input[type="email"]::placeholder {
-      display: block;
-      color: $text-gray;
-      font-weight: 500;
-      font-size: 1rem;
+    &-input {
+      @include flex;
+      flex-direction: column;
+      & input[type="email"] {
+        display: block;
+        padding: 15px 20px;
+        outline: none;
+        border-radius: 26.5px;
+        border: none;
+      }
+      & input[type="email"]::placeholder {
+        display: block;
+        color: $text-gray;
+        font-weight: 500;
+        font-size: 1rem;
+      }
     }
   }
-}
-}//739px
-@media only screen and(min-width:46.25rem )and(max-width: 63.938rem){
-  .newsletter{
+} //739px
+@media only screen and(min-width:46.25rem ) and(max-width: 63.938rem) {
+  .newsletter {
     padding: 85px 25px;
   }
 }
